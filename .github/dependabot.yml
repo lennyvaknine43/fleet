@@ -9,7 +9,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates for github-actions dependencies
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     pull-request-branch-name:
       # Default is "/" which makes "docker tag" fail with
       # "not a valid repository/tag: invalid reference format".
@@ -24,7 +24,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates for docker dependencies
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     reviewers:
       - "fleetdm/go"
       - "fleetdm/infra"
@@ -45,7 +45,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     allow:
       - dependency-type: "production"
     reviewers:
@@ -63,7 +63,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     reviewers:
       - lucasmrod
     pull-request-branch-name:
@@ -80,7 +80,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     reviewers:
       - lukeheath
     allow:
