@@ -9,7 +9,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates for github-actions dependencies
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     pull-request-branch-name:
       # Default is "/" which makes "docker tag" fail with
       # "not a valid repository/tag: invalid reference format".
@@ -24,7 +24,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates for docker dependencies
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     reviewers:
       - "fleetdm/go"
       - "fleetdm/infra"
@@ -45,7 +45,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     allow:
       - dependency-type: "production"
     reviewers:
@@ -63,7 +63,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     reviewers:
       - lucasmrod
     pull-request-branch-name:
@@ -80,7 +80,7 @@ updates:
     schedule:
       interval: "daily"
     # Disable version updates
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     reviewers:
       - lukeheath
     allow:
@@ -92,3 +92,296 @@ updates:
     # Add assignees
     assignees:
       - lukeheath
+  - package-ecosystem: "npm"
+    directory: "/.github/actions/eng-metrics"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/ee/fleetd-chrome"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/ee/tools/license"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/ee/vulnerability-dashboard"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/third_party/vuln-check"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/tools/fleetctl-npm"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/website/generators/landing-page"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "bundler"
+    directory: "/ee/tools/puppet/fleetdm"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gradle"
+    directory: "/android"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "helm"
+    directory: "/charts/fleet"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "helm"
+    directory: "/charts/tuf"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/third_party/goval-dictionary"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/third_party/vuln-check"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/tools/github-manage"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/tools/mdm/windows/bitlocker"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/tools/qacheck"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/tools/snapshot"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gomod"
+    directory: "/tools/terraform"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/ee/vulnerability-dashboard"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/infrastructure/loadtesting/terraform/docker"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/orbit/tools/ubuntu"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/server/mdm/scep"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/third_party/goval-dictionary"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/bomutils-docker"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleet-docker"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetctl-docker"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetd-linux/amazonlinux-2023"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetd-linux/centos-stream-10"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetd-linux/debian-12.8"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetd-linux/fedora-41"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetd-linux/redhat-9.5"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/fleetd-linux/ubuntu-24.04"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/mdm/migration/mdmproxy"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/tuf/test"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker"
+    directory: "/tools/wix-docker"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/docs/solutions/docker-compose"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/ee/vulnerability-dashboard"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/server/mdm/nanomdm"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/test/upgrade"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/apm-elastic"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/fleetd-linux"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/mysql-replica-testing"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/osquery"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/osquery/in-a-box"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/osquery/in-a-box/osquery"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/telemetry"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "docker-compose"
+    directory: "/tools/test-orbit-mtls"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "gradle"
+    directory: "/android/app"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
